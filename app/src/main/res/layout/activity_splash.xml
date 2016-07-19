@@ -1,0 +1,14 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.graduate.lsj.lbschartforgraduate.ui.modules.activity.SplashActivity">
+
+
+    <ImageView android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        android:background="@mipmap/splash_view"/>
+
+</merge>

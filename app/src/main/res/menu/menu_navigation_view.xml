@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_market"
+            android:icon="@mipmap/ic_dashboard"
+            android:title="市场份额"/>
+        <item
+            android:id="@+id/nav_rank"
+            android:icon="@mipmap/ic_event"
+            android:title="排行榜"/>
+        <item
+            android:id="@+id/nav_special_offer"
+            android:icon="@mipmap/ic_headset"
+            android:title="优惠活动"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@mipmap/ic_forum"
+            android:title="设置"/>
+    </group>
+
+    <item android:title="版本信息">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@mipmap/ic_dashboard"
+                android:title="关于"/>
+            <item
+                android:id="@+id/nav_author"
+                android:icon="@mipmap/ic_forum"
+                android:title="作者"/>
+        </menu>
+    </item>
+
+</menu>

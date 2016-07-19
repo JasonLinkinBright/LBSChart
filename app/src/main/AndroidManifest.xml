@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.graduate.lsj.lbschartforgraduate">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".LBSApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Gscz6zmfvwxN7mVYk0Vnjfgf" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+
+        <activity
+            android:name=".ui.modules.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.modules.activity.CoreActivity"
+            android:label="CoreActivity" />
+
+        <activity
+            android:name=".ui.modules.activity.GuideActivity"
+            android:label="GuideActivity" />
+
+        <activity
+            android:name=".ui.modules.activity.RegisterActivity"
+            android:label="RegisterActivity" />
+        <activity
+            android:name=".ui.modules.activity.LoginActivity"
+            android:label="LoginActivity"></activity>
+
+        <activity
+            android:name=".ui.modules.activity.InstitutionDetailActivity"
+            android:label="InstitutionDetailActivity" />
+
+        <activity
+            android:name=".ui.modules.activity.MarketShareActivity"
+            android:label="MarketShareActivity" />
+        <activity
+            android:name=".ui.modules.activity.RankActivity"
+            android:label="RankActivity" />
+        <activity
+            android:name=".ui.modules.activity.AboutActivity"
+            android:label="AboutActivity" />
+
+        <activity
+            android:name=".ui.modules.activity.AccountSettingActivity"
+            android:label="AccountSettingActivity" />
+
+        <activity
+            android:name=".ui.modules.activity.DiscountActivity"
+            android:label="DiscountActivity" />
+        <activity
+            android:name=".ui.modules.activity.AuthorActivity"
+            android:label="AuthorActivity" />
+
+        <activity
+            android:name=".ui.modules.activity.PersonalInfoActivity"
+            android:label="PersonalInfoActivity" />
+
+        <activity android:name=".ui.modules.activity.AvatarActivity"
+            android:label="AvatarActivity"/>
+
+    </application>
+
+
+</manifest>

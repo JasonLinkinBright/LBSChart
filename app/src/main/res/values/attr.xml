@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="lineEdittext">
+        <attr name="drawableFocus" format="reference"></attr>
+        <attr name="drawableUnFocus" format="reference"></attr>
+        <attr name="drawableError" format="reference"></attr>
+    </declare-styleable>
+</resources>
